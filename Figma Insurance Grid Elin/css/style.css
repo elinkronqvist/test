@@ -1,0 +1,587 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+.wrapper{
+    width: 1440px;
+    height: 2992px;
+    margin: 0 auto;
+    background: #E5E5E5;   
+}*/
+
+    .wrapper{
+    max-width: 1440px;
+    background:#E5E5E5;
+    margin: auto;
+}
+
+ .main-container{
+    text-align: center;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+} 
+
+/******* MAIN HEADER *******/
+
+.main-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 544px;
+    width: 100%;
+
+    background: #C7DDEA;
+}
+
+.rectangle-1{
+    background-color: #C7DDEA;
+    background-image: url(/img/family.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 10px;
+    text-align: left;
+    padding: 2rem 3rem;
+}
+
+.rectangle-1 h1{
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    padding-bottom: 1rem;
+}
+
+.rectangle-1 p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4rem;
+    
+}
+
+#highlight{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.rectangle-2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.rectangle-2-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F17949;
+}
+
+.rectangle-2-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FAB131;  
+}
+
+.rectangle-2 p{
+    font-family: 'Fira sans';
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+}
+
+.box-text{
+    color: #fff;
+    font-size: 32px;
+    line-height: 41px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.btn{
+   list-style: none; 
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.btn-text{
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: bold;
+padding: 1rem 3rem;
+font-size: 10px;
+line-height: 12px;
+border-radius: 100px;
+box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+background: #fff;
+color: rgba(0, 0, 0, 0.8);
+margin-top: 3rem;
+margin-right: 10rem;
+}
+
+/******* MAIN NAV *******/
+
+.main-nav{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 8rem;
+}
+
+.menu{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+.menu-item{
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+  
+}
+
+.menu-item-link{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+/******* MAIN SECTION ONE *******/
+
+
+.main-section{
+    background: #A9A19E;
+}
+
+.main-section-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*height: 612px;  */
+
+    height: 612px;
+    width: 100%;
+
+}
+
+.main-section-one-left{
+    font-size: 45px;
+    text-align: left;
+    margin-left: 8rem;
+    margin-top: 4rem;
+}
+
+.main-section-one-left h1{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 45px%;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.main-section-one-right{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    
+    margin-top: 5rem;
+    margin-right: 15rem;
+    margin-left: 4rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-text-two{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    }
+    
+/******* MAIN SECTION TWO CARDS *******/
+
+.main-section-two{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+   /*  grid-template-columns: 1fr 1fr 1fr; */
+    column-gap: 1.68rem;
+    
+    background: #FAB131;  
+}
+
+.cards{
+    height: 308px;
+    width: 256px;
+/*     margin: auto;
+    padding-top: 11rem;
+    padding-left: 2rem;
+    padding-right: 2rem; */
+    justify-content: center;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    margin-top: -10rem;
+}
+
+.card-img{
+    display: grid;
+    width: 236px;
+    height: 150px;  
+    border-radius: 5px;
+    margin-top: -1.625rem;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    
+}
+
+.card-one .card-img{
+    background-color: #C7DDEA;
+    background-image: url(/img/young-boy.png);  
+}
+
+.card-two .card-img{
+    background-color: #FAB131;
+    background-image: url(/img/lady.png);  
+}
+
+.card-three .card-img{
+    background-color: #F17949;
+    background-image: url(/img/old-man.png);  
+}
+
+.card-top-content{
+    display: grid;
+    justify-content: center;
+}
+
+.card-bottom{
+    align-content: flex-end;
+    padding: 1rem;
+
+}
+
+
+.card-one h3, .card-two h3, .card-three h3{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 1rem;
+}
+
+/* 
+
+.card-one-content{
+    width: 236px;
+    height: 150px;
+    background-color: #fff;
+    background-image: url(/img/young-boy.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-left: 8rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-img{
+
+    margin-top: -12rem;
+    margin-left: -1.3rem;
+    background-color: #C7DDEA;
+    border-radius: 4px;
+}
+
+/* .card-one-content:before{
+    content: "";
+    width: 236px;
+    height: 150px;
+    left: 319px;
+    top: 1039px;
+
+    background-color: #C7DDEA;
+    border-radius: 4px;
+} */
+
+/* 
+.card-two{
+    background-color: #fff;
+    background-image: url(/img/lady.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-two-content{
+    width: 236px;
+    height: 150px;
+    margin-top: -12rem;
+    margin-left: -1.3rem;
+    background-color: #FAB131;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.card-three{
+    background-color: #fff;
+    background-image: url(/img/old-man.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-right: 8rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-three-content{
+    width: 236px;
+    height: 150px;
+    margin-top: -12rem;
+    margin-left: -1.3rem;
+    background-color: #F17949;
+    border-radius: 4px;
+    z-index: 1;
+}
+ */
+
+
+
+/******* MAIN SECTION THREE *******/
+
+.main-section-three{
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    width: 100%;
+    padding-bottom: 20rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background: #FAB131;
+}
+
+.main-section-three h3{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    padding-top: 8rem;
+    color: #fff;
+}
+
+.main-section-three p{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2rem 12rem 0 12rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/******* BOXES *******/
+
+.main-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+}
+
+.boxes{
+    height: 340px;
+}
+
+.boxes h2{
+    text-align: start;
+    padding: 2rem 0 0 2rem;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.boxes p{
+    text-align: center;
+    padding: 5rem;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.box-1{
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.81rem
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #C7DDEA;
+}
+
+.box-2{
+
+    background-color: #fff;
+}
+
+.box-3{
+    background-color: #EBEBEB;
+}
+
+.box-4{
+    background-color: #fff;
+}
+
+.box-5{
+    background-color: #F17949;
+}
+
+.box-6{
+    background-color: #fff;
+}
+
+/******* FOOTER *******/
+
+.main-footer{
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68px;
+    width: 100%;
+    background: #A9A19E;
+}
+
+.footer-bottom{
+    height: 340px;
+    background: #777574;;
+}
+
+.footer-top a{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/******* MEDIA QUERIES *******/
+
+@media only screen and (max-width: 375px){
+    
+    .wrapper{
+        width: 375px; 
+        height: 100vh;
+     }
+
+/******* MEDIA - MAIN-HEADER *******/
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .rectangle-1{
+        margin-left: 2rem;
+    }
+
+    .rectangle-2-top{
+        height: 315px;
+    }
+
+    .rectangle-2-bottom{
+        height: 315px;
+    }
+
+
+/******* MEDIA - MAIN-SECTION *******/
+
+/* .main-section-one-left{
+    font-size: 45px;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 1rem;
+} */
+
+    .main-section-one{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+       
+        height: 1580px;
+    }
+
+    .btn-text-two{
+        display: none;
+    }
+
+    .main-section-three-text{
+        text-align: center;
+        height: 550px;
+        width: 100%;
+        padding-left: 1rem
+    }
+
+/******* MEDIA - BOXES *******/
+
+    .boxes{
+        height: 170px;
+    }
+
+/******* MEDIA - MAIN NAV *******/
+
+    .main-nav{
+        display: none;
+    }
+
+/******* MEDIA - FOOTER *******/
+
+    .footer-top{
+        display: none;
+    }
+
+}
